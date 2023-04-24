@@ -1,0 +1,48 @@
+### 식당 조회
+GET http://localhost:8080/manager/search/restaurant?restaurantName=
+Content-Type: application/json
+MEMBER_TOKEN: eyJhbGciOiJIUzUxMiJ9.eyJqdGkiOiIxIiwic3ViIjoiaG93LUBkYXVtLm5ldCIsInJvbGVzIjoiTUFOQUdFUiIsImlhdCI6MTY4MjMxNzc3NywiZXhwIjoxNjgyNDA0MTc3fQ.YKBjs92J1UObyiOI2san2d1nOlWIM6CVYHQz5gODCVza1h0E-qMKv72G-nEff5FgP2jLQ5M3-N0glq1AdvMuHw
+
+
+### 식당 저장
+POST http://localhost:8080/manager/add/restaurant
+Content-Type: application/json
+MEMBER_TOKEN: eyJhbGciOiJIUzUxMiJ9.eyJqdGkiOiIxIiwic3ViIjoiaG93LUBkYXVtLm5ldCIsInJvbGVzIjoiTUFOQUdFUiIsImlhdCI6MTY4MjMxNzc3NywiZXhwIjoxNjgyNDA0MTc3fQ.YKBjs92J1UObyiOI2san2d1nOlWIM6CVYHQz5gODCVza1h0E-qMKv72G-nEff5FgP2jLQ5M3-N0glq1AdvMuHw
+
+{
+  "restaurantName": "2번가 식당",
+  "restaurantPhone": "02-511-1123",
+  "restaurantAddress": "서울",
+  "restaurantTable": 30,
+  "restaurantMemo": ""
+}
+
+
+### 예약 조회
+GET http://localhost:8080/manager/search/reservation?restaurantName=
+Content-Type: application/json
+MEMBER_TOKEN: eyJhbGciOiJIUzUxMiJ9.eyJqdGkiOiIxIiwic3ViIjoiaG93LUBkYXVtLm5ldCIsInJvbGVzIjoiTUFOQUdFUiIsImlhdCI6MTY4MjMxNzc3NywiZXhwIjoxNjgyNDA0MTc3fQ.YKBjs92J1UObyiOI2san2d1nOlWIM6CVYHQz5gODCVza1h0E-qMKv72G-nEff5FgP2jLQ5M3-N0glq1AdvMuHw
+
+
+### 예약 승인
+PUT http://localhost:8080/manager/approval/reservation/1
+Content-Type: application/json
+MEMBER_TOKEN: eyJhbGciOiJIUzUxMiJ9.eyJqdGkiOiIxIiwic3ViIjoiaG93LUBkYXVtLm5ldCIsInJvbGVzIjoiTUFOQUdFUiIsImlhdCI6MTY4MjMxNzc3NywiZXhwIjoxNjgyNDA0MTc3fQ.YKBjs92J1UObyiOI2san2d1nOlWIM6CVYHQz5gODCVza1h0E-qMKv72G-nEff5FgP2jLQ5M3-N0glq1AdvMuHw
+
+[
+  {
+    "reservationId": "2023042410001"
+  }
+]
+
+
+### 예약 거절
+PUT http://localhost:8080/manager/refuse/reservation/2
+Content-Type: application/json
+MEMBER_TOKEN: eyJhbGciOiJIUzUxMiJ9.eyJqdGkiOiIxIiwic3ViIjoiaG93LUBkYXVtLm5ldCIsInJvbGVzIjoiTUFOQUdFUiIsImlhdCI6MTY4MjMxNzc3NywiZXhwIjoxNjgyNDA0MTc3fQ.YKBjs92J1UObyiOI2san2d1nOlWIM6CVYHQz5gODCVza1h0E-qMKv72G-nEff5FgP2jLQ5M3-N0glq1AdvMuHw
+
+[
+  {
+    "reservationId": "2023042420001"
+  }
+]

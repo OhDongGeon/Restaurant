@@ -1,0 +1,9 @@
+### 파트너쉽 승인
+PUT http://localhost:8080/partner/approval
+Content-Type: application/json
+
+[
+  {
+    "memberId": "1"
+  }
+]

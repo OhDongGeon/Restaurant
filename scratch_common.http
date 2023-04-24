@@ -1,0 +1,30 @@
+### 식당 조회
+GET http://localhost:8080/common/search?restaurantName=
+Content-Type: application/json
+
+
+### 회원가입
+POST http://localhost:8080/common/signup
+Content-Type: application/json
+
+{
+  "memberEmail": "tot0119@naver.com",
+  "memberPassword": "1234",
+  "memberName": "먹겠습니다",
+  "memberNickName": "먹자",
+  "memberBirthday": "200-01-01",
+  "memberPhone": "01000000000"
+}
+
+
+### 로그인
+POST http://localhost:8080/common/signin
+Content-Type: application/json
+
+{
+  "memberEmail": "how-@daum.net",
+  "memberPassword": "1234"
+}
+
+
+

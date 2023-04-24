@@ -1,0 +1,35 @@
+### 회원 정보 조회
+GET http://localhost:8080/user/info
+Content-Type: application/json
+MEMBER_TOKEN: eyJhbGciOiJIUzUxMiJ9.eyJqdGkiOiIyIiwic3ViIjoidG90MDExOUBuYXZlci5jb20iLCJyb2xlcyI6IlVTRVIiLCJpYXQiOjE2ODIzMTc3MjMsImV4cCI6MTY4MjQwNDEyM30.PjNxxtBHGhXNJb5ZQOPT8LZ0GU3FU6hbRaDtA00MjhxGb-bQtWP07lRRjHDyFW_9Jv8QKybuseO04UsVS4-OKQ
+
+
+### 파트너쉽 가입신청
+PUT http://localhost:8080/user/partnership
+Content-Type: application/json
+MEMBER_TOKEN: eyJhbGciOiJIUzUxMiJ9.eyJqdGkiOiIxIiwic3ViIjoiaG93LUBkYXVtLm5ldCIsInJvbGVzIjoiVVNFUiIsImlhdCI6MTY4MjMxNzUwMSwiZXhwIjoxNjgyNDAzOTAxfQ.oddbiiqEWD6ngU3_FfR0G_5mIwmMRTYsw6AQlpLpwqlfgnuM0pWOdRin3L3MwY1ZyfKl8Z32MBTS4MgjGarMgQ
+
+
+### 회원 예약 조회
+GET http://localhost:8080/user/search/reservation
+Content-Type: application/json
+MEMBER_TOKEN: eyJhbGciOiJIUzUxMiJ9.eyJqdGkiOiIyIiwic3ViIjoidG90MDExOUBuYXZlci5jb20iLCJyb2xlcyI6IlVTRVIiLCJpYXQiOjE2ODIzMTc3MjMsImV4cCI6MTY4MjQwNDEyM30.PjNxxtBHGhXNJb5ZQOPT8LZ0GU3FU6hbRaDtA00MjhxGb-bQtWP07lRRjHDyFW_9Jv8QKybuseO04UsVS4-OKQ
+
+
+### 식당 예약
+POST http://localhost:8080/user/reservation/2
+Content-Type: application/json
+MEMBER_TOKEN: eyJhbGciOiJIUzUxMiJ9.eyJqdGkiOiIyIiwic3ViIjoidG90MDExOUBuYXZlci5jb20iLCJyb2xlcyI6IlVTRVIiLCJpYXQiOjE2ODIzMTc3MjMsImV4cCI6MTY4MjQwNDEyM30.PjNxxtBHGhXNJb5ZQOPT8LZ0GU3FU6hbRaDtA00MjhxGb-bQtWP07lRRjHDyFW_9Jv8QKybuseO04UsVS4-OKQ
+
+{
+  "memberName": "손님",
+  "memberPhone": "01050341298",
+  "reservationDate": "2023-04-24T16:00",
+  "reservationPeople": 25
+}
+
+
+### 식당 예약 취소
+DELETE http://localhost:8080/user/reservation/2023042420001
+Content-Type: application/json
+MEMBER_TOKEN: eyJhbGciOiJIUzUxMiJ9.eyJqdGkiOiIyIiwic3ViIjoidG90MDExOUBuYXZlci5jb20iLCJyb2xlcyI6IlVTRVIiLCJpYXQiOjE2ODIzMTc3MjMsImV4cCI6MTY4MjQwNDEyM30.PjNxxtBHGhXNJb5ZQOPT8LZ0GU3FU6hbRaDtA00MjhxGb-bQtWP07lRRjHDyFW_9Jv8QKybuseO04UsVS4-OKQ
